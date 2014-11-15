@@ -110,6 +110,10 @@ brew cask install dropbox
 fancy_echo "Installing Google Chrome..."
 brew cask install google-chrome
 
+fancy_echo "Installing autojump"
+  brew_install_or_upgrade 'autojump'
+  append_to_zshrc '[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh'
+
 #fancy_echo "Installing Postgres, a good open source relational database ..."
 #  brew_install_or_upgrade 'postgres'
 
