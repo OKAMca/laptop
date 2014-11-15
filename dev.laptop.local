@@ -1,34 +1,45 @@
 #!/bin/sh
 #Basic app
+#Used to backup config like .ssh to Dropbox or Google Drive
 brew install mackup
 brew cask install iterm2
 brew cask install java
 
 #Dev
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install sequel-pro
+#brew cask install transmit
+brew cask install cyberduck
+brew cask install sourcetree
+
+#Gems
+gem install middleman --no-document
+gem install serve --no-document
+
+#Android
 brew install android-sdk
 brew install ant
-brew cask install sequel-pro
-brew cask install vagrant
 
 # Fun & Giggles
-#brew cask install spotify
+brew cask install spotify
 brew cask install google-drive
 brew cask install google-hangouts
-#brew cask install flowdock
-
-#Productivity
-#brew cask install mailbox
-#brew cask install lastpass-universal
-#brew cask install bartender
+brew cask install flowdock
 
 #IDE
 brew cask install sublime-text
 brew cask install atom
 brew cask install webstorm
 
-# Ssssshhhh
 
 #Install fonts
 brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
+
+#Productivity
+brew cask install mailbox
+brew cask install lastpass-universal
+brew cask install bartender
+brew cask install transmission
