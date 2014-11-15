@@ -101,6 +101,15 @@ fi
 fancy_echo "Updating Homebrew formulas ..."
 brew update
 
+fancy_echo "Adding cask..."
+brew tap caskroom/cask
+brew install brew-cask
+
+fancy_echo "Installing Dropbox..."
+brew cask install dropbox
+fancy_echo "Installing Google Chrome..."
+brew cask install google-chrome
+
 #fancy_echo "Installing Postgres, a good open source relational database ..."
 #  brew_install_or_upgrade 'postgres'
 
