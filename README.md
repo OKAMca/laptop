@@ -43,12 +43,9 @@ What it sets up
 * [ImageMagick] for cropping and resizing images
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
 * [NVM] for managing versions of Node.js
-* [Parity] for development, staging, and production parity
-* [Postgres] for storing relational data
 * [Qt] for headless JavaScript testing via Capybara Webkit
 * [Rails] gem for writing web applications
 * [Rbenv] for managing versions of Ruby
-* [Redis] for storing key-value data
 * [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
 * [The Silver Searcher] for finding things in files
@@ -68,11 +65,9 @@ What it sets up
 [NPM]: https://www.npmjs.org/
 [NVM]: https://github.com/creationix/nvm
 [Parity]: https://github.com/croaky/parity
-[Postgres]: http://www.postgresql.org/
 [Qt]: http://qt-project.org/
 [Rails]: http://rubyonrails.org/
 [Rbenv]: https://github.com/sstephenson/rbenv
-[Redis]: http://redis.io/
 [Ruby Build]: https://github.com/sstephenson/ruby-build
 [Ruby]: https://www.ruby-lang.org/en/
 [The Silver Searcher]: https://github.com/ggreer/the_silver_searcher
@@ -103,6 +98,32 @@ Put your customizations in `~/.laptop.local`. For example, your
 
 You should write your customizations such that they can be run safely more than
 once. See the `mac` script for examples.
+
+### An example for a DEV at OKAM
+
+```bash
+#!/bin/sh
+brew install mackup
+brew cask install iterm2
+brew cask install java
+brew cask install bartender
+brew cask install sequel-pro
+brew cask install vagrant
+brew cask install spotify
+brew cask install google-drive
+brew cask install sublime-text
+brew cask install atom
+brew cask install webstorm
+#Manage .dotfiles with Dropbox
+brew install mackup
+#Need to run either mackup backup or mackup restore after
+
+#Install fonts
+
+brew tap caskroom/fonts
+brew cask install font-inconsolata
+brew cask font-source-code-pro
+```
 
 Credits
 -------
