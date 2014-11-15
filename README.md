@@ -16,8 +16,9 @@ versions are welcome.
 
 Install
 -------
+1. Download and copy `dev.laptop.local` to your HOME directory and rename it `.laptop.local`
 
-Read, then run the script:
+2. Run the script:
 
     bash <(curl -s https://raw.githubusercontent.com/OKAMca/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
@@ -97,33 +98,8 @@ Put your customizations in `~/.laptop.local`. For example, your
     brew cask install rdio
 
 You should write your customizations such that they can be run safely more than
-once. See the `mac` script for examples.
+once. See the `dev.laptop.local` script for examples.
 
-### An example for a DEV at OKAM
-
-```bash
-#!/bin/sh
-brew install mackup
-brew cask install iterm2
-brew cask install java
-brew cask install bartender
-brew cask install sequel-pro
-brew cask install vagrant
-brew cask install spotify
-brew cask install google-drive
-brew cask install sublime-text
-brew cask install atom
-brew cask install webstorm
-#Manage .dotfiles with Dropbox
-brew install mackup
-#Need to run either mackup backup or mackup restore after
-
-#Install fonts
-
-brew tap caskroom/fonts
-brew cask install font-inconsolata
-brew cask install font-source-code-pro
-```
 
 Credits
 -------
@@ -134,7 +110,7 @@ Thank you [thoughtbot](https://github.com/thoughtbot/laptop/) !
 Contributing
 ------------
 
-Edit the `mac` file.
+Edit the `mac` file and/or create template files for different role at OKAM :)
 
 License
 -------
