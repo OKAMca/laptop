@@ -122,7 +122,7 @@ brew install mackup
 
 brew tap caskroom/fonts
 brew cask install font-inconsolata
-brew cask font-source-code-pro
+brew cask install font-source-code-pro
 ```
 
 Credits
