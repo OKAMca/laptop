@@ -1,7 +1,7 @@
 Laptop
 ======
 
-Laptop is a script to set up an OS X laptop for Rails development.
+Laptop is a script to set up an OS X laptop with the based tools used @ OKAM.
 
 Requirements
 ------------
@@ -106,13 +106,9 @@ once. See the `mac` script for examples.
 
 Credits
 -------
+This script is a fork of laptop from thoughtbot.
 
-![thoughtbot](http://thoughtbot.com/assets/tm/logo.png)
-
-Laptop is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community).
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-Thank you, [contributors](https://github.com/thoughtbot/laptop/graphs/contributors)!
+Thank you [thoughtbot](https://github.com/thoughtbot/laptop/) !
 
 Contributing
 ------------
