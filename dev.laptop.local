@@ -1,0 +1,34 @@
+#!/bin/sh
+#Basic app
+brew install mackup
+brew cask install iterm2
+brew cask install java
+
+#Dev
+brew install android-sdk
+brew install ant
+brew cask install sequel-pro
+brew cask install vagrant
+
+# Fun & Giggles
+#brew cask install spotify
+brew cask install google-drive
+brew cask install google-hangouts
+#brew cask install flowdock
+
+#Productivity
+#brew cask install mailbox
+#brew cask install lastpass-universal
+#brew cask install bartender
+
+#IDE
+brew cask install sublime-text
+brew cask install atom
+brew cask install webstorm
+
+# Ssssshhhh
+
+#Install fonts
+brew tap caskroom/fonts
+brew cask install font-inconsolata
+brew cask install font-source-code-pro
