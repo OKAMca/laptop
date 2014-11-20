@@ -101,6 +101,9 @@ fi
 fancy_echo "Updating Homebrew formulas ..."
 brew update
 
+fancy_echo "Upgrading git...."
+brew_install_or_upgrade 'git'
+
 fancy_echo "Adding cask..."
 brew tap caskroom/cask
 brew install brew-cask
