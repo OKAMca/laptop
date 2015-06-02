@@ -3,7 +3,7 @@
 #Used to backup config like .ssh to Dropbox or Google Drive
 
 fancy_echo "Installing Fish ..."
-  brew tap 'caskroom/task'
+  brew tap 'caskroom/cask'
   brew_install_or_upgrade 'brew-cask'
 
 
