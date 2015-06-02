@@ -1,25 +1,41 @@
 #!/bin/sh
 #Basic app
 #Used to backup config like .ssh to Dropbox or Google Drive
-brew install mackup
+fancy_echo "Installing mackup ..."
+  brew_install_or_upgrade 'mackup'
+
+#For David personal pleasure
+fancy_echo "Installing Fish ..."
+  brew_install_or_upgrade 'fish'
+
 brew cask install iterm2
 brew cask install java
 
+# Can't live without window management
+brew cask install spectacle
+brew cask iterm2
+
 #Dev
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install sequel-pro
+fancy_echo "Virtualbox/vagrant..."
+  brew cask install virtualbox
+  brew cask install vagrant
+fancy_echo "sequel-pro"
+  brew cask install sequel-pro
 #brew cask install transmit
-brew cask install cyberduck
+# brew cask install cyberduck
 brew cask install sourcetree
 
 #Gems
 gem install middleman --no-document
 gem install serve --no-document
 
-#Android
-brew install android-sdk
-brew install ant
+#Android÷java
+fancy_echo "Installing Android build tools ..."
+  brew_install_or_upgrade 'gradle'
+  brew_install_or_upgrade 'android-sdk'
+  fancy_echo "Installing http/json tools ..."
+  brew_install_or_upgrade "httpie"
+  brew_install_or_upgrade "jq"
 
 # Fun & Giggles
 brew cask install spotify
@@ -28,18 +44,28 @@ brew cask install google-hangouts
 brew cask install flowdock
 
 #IDE
-brew cask install sublime-text
+# brew cask install sublime-text
 brew cask install atom
 brew cask install webstorm
-
 
 #Install fonts
 brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install font-source-code-pro
+brew cask install font-roboto
+
+#sketch-toolbox
+brew cask install sketch-toolbox
+
+#files
+brew cask install transmit
+
+#network
+brew cask install strongvpn-client
 
 #Productivity
-brew cask install mailbox
 brew cask install lastpass-universal
+brew cask install toggldesktop
 brew cask install bartender
 brew cask install transmission
+brew cask install vlc
