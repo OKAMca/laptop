@@ -1,6 +1,12 @@
 #!/bin/sh
 #Basic app
 #Used to backup config like .ssh to Dropbox or Google Drive
+
+fancy_echo "Installing Fish ..."
+  brew tap 'caskroom/task'
+  brew_install_or_upgrade 'brew-cask'
+
+
 fancy_echo "Installing mackup ..."
   brew_install_or_upgrade 'mackup'
 
