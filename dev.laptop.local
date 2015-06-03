@@ -14,8 +14,14 @@ fancy_echo "Installing mackup ..."
 fancy_echo "Installing Fish ..."
   brew_install_or_upgrade 'fish'
 
+brew cask install dropbox
+
 brew cask install iterm2
 brew cask install java
+
+brew tap caskroom/versions
+# for Navistream
+brew cask install java7
 
 # Can't live without window management
 brew cask install spectacle
@@ -44,7 +50,6 @@ fancy_echo "Installing Android build tools ..."
   brew_install_or_upgrade "jq"
 
 # Fun & Giggles
-brew cask install spotify
 brew cask install google-drive
 brew cask install google-hangouts
 brew cask install flowdock
@@ -52,7 +57,7 @@ brew cask install flowdock
 #IDE
 # brew cask install sublime-text
 brew cask install atom
-brew cask install webstorm
+#brew cask install webstorm
 
 #Install fonts
 brew tap caskroom/fonts
